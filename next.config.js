@@ -16,5 +16,5 @@ module.exports = withBundleAnalyzer({
 
   // Use these below if hosted on custom domain
   basePath: '',
-  assetPrefix: './',
+  assetPrefix: '/',
 });
