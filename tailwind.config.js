@@ -1,6 +1,3 @@
-const doesPublicPathIncluded =
-  process.env.NODE_ENV === 'local' ? '/public' : '';
-
 module.exports = {
   mode: 'jit',
   purge: ['./src/**/*.{js,ts,jsx,tsx}'],
@@ -68,10 +65,10 @@ module.exports = {
         hero: '4.5rem',
       },
       backgroundImage: {
-        'hero-banner': `url("~${doesPublicPathIncluded}/assets/images/hero-banner.jpg")`,
-        'leader-avt': `url("~${doesPublicPathIncluded}/assets/images/leader-avt-black.jpg")`,
-        'supported-currencies': `url("~${doesPublicPathIncluded}/assets/images/supported-currencies.jpg")`,
-        'who-we-serve': `url("~${doesPublicPathIncluded}/assets/images/who-we-serve.jpg")`,
+        'hero-banner': `url("~/assets/images/hero-banner.jpg")`,
+        'leader-avt': `url("~/assets/images/leader-avt-black.jpg")`,
+        'supported-currencies': `url("~/assets/images/supported-currencies.jpg")`,
+        'who-we-serve': `url("~/assets/images/who-we-serve.jpg")`,
       },
     },
   },
