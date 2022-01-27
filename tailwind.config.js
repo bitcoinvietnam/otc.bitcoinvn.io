@@ -65,11 +65,11 @@ module.exports = {
         hero: '4.5rem',
       },
       backgroundImage: {
-        'hero-banner': 'url("/assets/images/hero-banner.jpg")',
-        'leader-avt': 'url("/assets/images/leader-avt-black.jpg")',
+        'hero-banner': 'url("~/assets/images/hero-banner.jpg")',
+        'leader-avt': 'url("~/assets/images/leader-avt-black.jpg")',
         'supported-currencies':
-          'url("/assets/images/supported-currencies.jpg")',
-        'who-we-serve': 'url("/assets/images/who-we-serve.jpg")',
+          'url("~/assets/images/supported-currencies.jpg")',
+        'who-we-serve': 'url("~/assets/images/who-we-serve.jpg")',
       },
     },
   },
