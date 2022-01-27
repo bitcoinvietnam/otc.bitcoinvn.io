@@ -65,10 +65,13 @@ module.exports = {
         hero: '4.5rem',
       },
       backgroundImage: {
-        'hero-banner': `url("/otc.bitcoinvn.io/assets/images/hero-banner.jpg")`,
-        'leader-avt': `url("/otc.bitcoinvn.io//assets/images/leader-avt-black.jpg")`,
-        'supported-currencies': `url("/otc.bitcoinvn.io//assets/images/supported-currencies.jpg")`,
-        'who-we-serve': `url("/otc.bitcoinvn.io//assets/images/who-we-serve.jpg")`,
+        'hero-banner': 'url("/otc.bitcoinvn.io/assets/images/hero-banner.jpg")',
+        'leader-avt':
+          'url("/otc.bitcoinvn.io/assets/images/leader-avt-black.jpg")',
+        'supported-currencies':
+          'url("/otc.bitcoinvn.io/assets/images/supported-currencies.jpg")',
+        'who-we-serve':
+          'url("/otc.bitcoinvn.io/assets/images/who-we-serve.jpg")',
       },
     },
   },
