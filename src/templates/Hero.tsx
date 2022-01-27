@@ -103,7 +103,7 @@ const Hero = () => {
               <div className="py-10">
                 <img
                   className="mx-auto rounded-full shadow-sm"
-                  src={`/assets/images/leader-avt-black.jpg`}
+                  src={`/otc.bitcoinvn.io/assets/images/leader-avt-black.jpg`}
                   alt="Our Team Leadership"
                   width="30%"
                 />
