@@ -13,7 +13,7 @@ import { AppConfig } from '../utils/AppConfig';
 function ContactForm() {
   const [submitState, handleSubmit] = useForm('mdobajgq');
   if (submitState.succeeded) {
-    window.location.href = '../otc.bitcoinvn.io/index.html';
+    window.location.href = './index.html';
   }
 
   return (
