@@ -16,6 +16,7 @@
 /.next
 
 # production
+/out
 /build
 /assets
 
