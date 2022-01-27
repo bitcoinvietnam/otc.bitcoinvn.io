@@ -18,7 +18,7 @@
 # production
 /out
 /build
-/otc.bitcoinvn.io
+/assets
 
 # misc
 .DS_Store
