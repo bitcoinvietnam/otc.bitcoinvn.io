@@ -54,7 +54,7 @@ const Hero = () => {
         <Background color="bg-gradient-to-b from-gold-600 to-gold-600 opacity-90">
           <Section color="py-7"></Section>
         </Background>
-        <Background color="bg-gradient-to-b from-gray-900 to-gray-800 opacity-90">
+        <Background color="">
           <div className="laptop:flex py-30 px-30 ">
             <div className="laptop:w-1/2">
               <Background color="bg-who-we-serve opacity-100 bg-cover">
@@ -95,40 +95,43 @@ const Hero = () => {
               </Background>
             </div>
           </div>
-          <Section yPadding="pt-20 pb-10">
-            <div className="w-full text-center sm:px-6 ">
-              <h3 className="text-3xl text-gold-500 font-semibold">
-                Our Team Leadership
-              </h3>
-              <div className="py-10">
-                <img
-                  className="mx-auto rounded-full shadow-sm"
-                  src={`https://otc.bitcoinvn.io/assets/images/leader-avt-black.jpg`}
-                  alt="Our Team Leadership"
-                  width="30%"
-                />
+          <Background color="bg-gradient-to-b from-gray-900 to-gray-800 opacity-95">
+            <Section yPadding="pt-20 pb-10">
+              <div className="w-full text-center sm:px-6 ">
+                <h3 className="text-3xl text-gold-500 font-semibold">
+                  Our Team Leadership
+                </h3>
+                <div className="py-10">
+                  <img
+                    className="mx-auto rounded-full shadow-sm"
+                    src={`https://otc.bitcoinvn.io/assets/images/leader-avt-black.jpg`}
+                    alt="Our Team Leadership"
+                    width="30%"
+                  />
+                </div>
+                <span className="italic text-gold-400 font-semibold">
+                  <a
+                    href="http://www.twitter.com/PhuongBitcoinVN"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Nguyen Tran Bao Phuong{' '}
+                  </a>
+                  - Head of OTC Trading
+                </span>
+                <div className=" py-3 text-xl mt-8 mb-16 text-gray-400 text-justify">
+                  <h2>
+                    “Our team has been able to pioneer this market since its
+                    early days. We have successively been able to build up a
+                    large liquidity network within Vietnam as well as in many
+                    neighbouring countries. If you feel we could provide a
+                    solution to your needs - we hope to have a conversation
+                    soon!”
+                  </h2>
+                </div>
               </div>
-              <span className="italic text-gold-400 font-semibold">
-                <a
-                  href="http://www.twitter.com/PhuongBitcoinVN"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Nguyen Tran Bao Phuong{' '}
-                </a>
-                - Head of OTC Trading
-              </span>
-              <div className=" py-3 text-xl mt-8 mb-16 text-gray-400 text-justify">
-                <h2>
-                  “Our team has been able to pioneer this market since its early
-                  days. We have successively been able to build up a large
-                  liquidity network within Vietnam as well as in many
-                  neighbouring countries. If you feel we could provide a
-                  solution to your needs - we hope to have a conversation soon!”
-                </h2>
-              </div>
-            </div>
-          </Section>
+            </Section>
+          </Background>
         </Background>
         <Background color="bg-gray-900 opacity-90">
           {/* <Section yPadding="pt-20 pb-40">
