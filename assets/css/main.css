@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main-section {
+    @apply h-screen px-5 min-h-min;
+  }
+
+  .main-title {
+    @apply text-3xl font-extrabold text-center uppercase text-gold-600;
+  }
+
+  .sub-title {
+    @apply text-xl font-extrabold text-left text-gold-600;
+  }
+
+  .btn {
+    @apply py-3 text-lg font-extrabold tracking-wider uppercase rounded-3xl w-60 min-w-min bg-gold-600;
+  }
+
+  .main-paragraph {
+    @apply text-sm leading-relaxed text-justify;
+  }
+
+  .external-link:hover {
+    @apply underline underline-offset-8 decoration-1;
+  }
+}
+
+
+@media screen(md) {
+  .main-title {
+    @apply text-5xl tracking-wider;
+  }
+
+  .sub-title {
+    @apply px-20;
+  }
+
+  .main-paragraph {
+    @apply px-20 text-base;
+  }
+}
