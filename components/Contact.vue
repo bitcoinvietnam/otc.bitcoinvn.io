@@ -98,7 +98,6 @@ export default {
       }
       const resp = await fetch(this.endpoint, {
         method: 'POST',
-        mode: 'no-cors',
         body: JSON.stringify(data)
       })
       console.log(JSON.stringify(resp))
