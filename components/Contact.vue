@@ -106,11 +106,13 @@ export default {
           usdc: this.usdc
         }
       }
-      const resp = await fetch(this.endpoint, {
+      // Formspree side will send an email for confirmation.
+      // No need to "await" for this fetch request
+      const resp = fetch(this.endpoint, {
         method: 'POST',
         body: JSON.stringify(data)
       })
-      // Formspree side will send an email for confirmation. So we just display a thank you note here...
+      // So we just display a thank you note here
       this.successResp = true
     },
   },
