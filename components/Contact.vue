@@ -107,13 +107,12 @@ export default {
         }
       }
       // Formspree side will send an email for confirmation.
-      // No need to "await" for this fetch request
-      const resp = fetch(this.endpoint, {
+      // So we just display a thank you note here
+      this.successResp = true
+      const resp = await fetch(this.endpoint, {
         method: 'POST',
         body: JSON.stringify(data)
       })
-      // So we just display a thank you note here
-      this.successResp = true
     },
   },
 }
