@@ -10,7 +10,7 @@
             <div class="flex flex-col space-y-5 md:space-y-5 md:tracking-wide">
               <div>
                 <input type="email" v-model="email" placeholder="Your Email"
-                  class="w-full max-w-2xl px-2 py-2 text-base leading-tight text-gray-900 bg-gray-400 border border-gray-200 rounded appearance-none md:text-lg placeholder:text-gray-900 focus:outline-none focus:bg-white focus:border-gray-500" />
+                  class="w-full max-w-2xl px-2 py-2 text-base leading-tight text-gray-900 bg-gray-400 border border-gray-200 rounded appearance-none md:min-w-full md:text-lg placeholder:text-gray-900 focus:outline-none focus:bg-white focus:border-gray-500" />
               </div>
               <div v-if="!validEmail" class="text-red-500">
                 Please enter a valid email address.
@@ -41,7 +41,16 @@
               </div>
               <div>
                 <textarea v-model="message" placeholder="Your Message (Optional)" rows="6"
-                  class="w-full max-w-2xl px-2 py-2 text-sm leading-tight text-gray-900 bg-gray-400 border border-gray-200 rounded appearance-none placeholder:text-gray-900 focus:outline-none focus:bg-white focus:border-gray-500" />
+                  class="w-full max-w-2xl px-2 py-2 text-sm leading-tight text-gray-900 bg-gray-400 border border-gray-200 rounded appearance-none md:min-w-full placeholder:text-gray-900 focus:outline-none focus:bg-white focus:border-gray-500" />
+              </div>
+              <div v-if="successResp" class="text-green-600">
+                <div class="font-bold">
+                  Thank you for contacting us.
+                </div>
+                <div class="font-bold">
+                  We will get back to you shortly via the provided email.
+                </div>
+                <div class="text-gray-500">You can safely close this tab now.</div>
               </div>
             </div>
           </form>
@@ -66,7 +75,8 @@ export default {
       usdt: false,
       usdc: false,
       endpoint: 'https://formspree.io/f/mdobajgq',
-      validEmail: true
+      validEmail: true,
+      successResp: false
     }
   },
   methods: {
@@ -81,11 +91,11 @@ export default {
     },
 
     async submit() {
+      this.successResp = false
       this.validEmail = this.validateEmail(this.email)
       if (!this.validEmail) {
         return
       }
-
       const data = {
         email: this.email,
         message: this.message,
@@ -100,7 +110,8 @@ export default {
         method: 'POST',
         body: JSON.stringify(data)
       })
-      console.log(JSON.stringify(resp))
+      // Formspree side will send an email for confirmation. So we just display a thank you note here...
+      this.successResp = true
     },
   },
 }
