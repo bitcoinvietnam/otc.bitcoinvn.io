@@ -12,6 +12,9 @@
                 <input type="email" v-model="email" placeholder="Your Email"
                   class="w-full max-w-2xl px-2 py-2 text-base leading-tight text-gray-900 bg-gray-400 border border-gray-200 rounded appearance-none md:text-lg placeholder:text-gray-900 focus:outline-none focus:bg-white focus:border-gray-500" />
               </div>
+              <div v-if="!validEmail" class="text-red-500">
+                Please enter a valid email address.
+              </div>
               <div>
                 <div class="flex flex-col space-y-3">
                   <div>
@@ -42,6 +45,7 @@
               </div>
             </div>
           </form>
+
         </div>
         <div class="text-center">
           <button class="btn" @click="submit">Submit</button>
@@ -62,11 +66,23 @@ export default {
       usdt: false,
       usdc: false,
       endpoint: 'https://formspree.io/f/mdobajgq',
+      validEmail: true
     }
   },
   methods: {
+    validateEmail(email) {
+      if (!email) {
+        return false
+      }
+      if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+        return true
+      }
+      return false
+    },
+
     async submit() {
-      if (!this.email || !this.message) {
+      this.validEmail = this.validateEmail(this.email)
+      if (!this.validEmail) {
         return
       }
 
@@ -84,7 +100,6 @@ export default {
         method: 'POST',
         body: JSON.stringify(data)
       })
-
       console.log(JSON.stringify(resp))
     },
   },
