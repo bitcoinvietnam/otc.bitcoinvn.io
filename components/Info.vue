@@ -8,9 +8,10 @@
         <div class="space-y-3 main-paragraph">
           <div>
             Over-the-counter (OTC) trading takes place off the online exchange platforms provided by <span
-              class="text-gold-600 external-link"> <a href="https://bitcoinvn.io" target="_blank">
-                BitcoinVN </a></span> and <span class="text-gold-600 external-link"><a href="https://vbtc.vn"
-                target="_blank">
+              class="text-gold-600 external-link"> <a
+                href="https://bitcoinvn.io?utm_source=otc&utm_medium=info_section&utm_campaign=landing" target="_blank">
+                BitcoinVN </a></span> and <span class="text-gold-600 external-link"><a
+                href="https://vbtc.vn?utm_source=otc&utm_medium=info_section&utm_campaign=landing" target="_blank">
                 VBTC </a></span>
             with
             highly competitive off-the-market rates. Access to our OTC trade desk offers deep liquidity and a private and
