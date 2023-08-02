@@ -34,10 +34,30 @@ body {
   .external-link:hover {
     @apply underline underline-offset-8 decoration-1;
   }
+
+  .error-text {
+    @apply px-1 py-1 text-white bg-red-500;
+  }
+
+  .success-text {
+    @apply px-1 py-1 text-white bg-green-500/80;
+  }
+
+  .loading-text {
+    @apply px-1 py-1 text-black bg-gold-500;
+  }
+
+  .text-input {
+    @apply w-full p-2.5 text-sm text-center text-black rounded-full;
+  }
 }
 
 
 @media screen(md) {
+  .text-input {
+    @apply w-2/3;
+  }
+
   .main-title {
     @apply text-5xl tracking-wider;
   }

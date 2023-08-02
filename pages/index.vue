@@ -4,6 +4,7 @@
     <Welcome />
     <Customer />
     <Currency />
+    <PrivateClient />
     <Team />
     <Service />
     <Info />
