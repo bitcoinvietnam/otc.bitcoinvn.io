@@ -9,7 +9,7 @@
           <div class="text-xl md:mx-auto">
             <ul class="space-y-3 md:space-y-5 md:tracking-wider">
               <li>
-                Looking for a premium service highly tailored to your needs?
+                Looking for a premium service carefully tailored to your needs?
               </li>
               <li>
                 Join our Private Client Newsletter to get more updates.
