@@ -18,7 +18,7 @@
           </div>
         </div>
         <div class="text-center">
-          <a href="https://newsletter.bitcoinvn.io/private-client.html" target="_blank">
+          <a href="https://newsletter.bitcoinvn.io/private-client" target="_blank">
             <button class="btn">
               Subscribe
             </button>
