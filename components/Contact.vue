@@ -1,5 +1,5 @@
 <template>
-  <div class="flex main-section bg-gray-900/90">
+  <div class="flex py-3 overflow-y-auto main-section bg-gray-900/90">
     <div class="m-auto">
       <div class="flex flex-col space-y-7">
         <div class="text-xl main-title md:text-3xl">
@@ -12,8 +12,22 @@
                 <input type="email" v-model="email" placeholder="Your Email"
                   class="w-full max-w-2xl px-2 py-2 text-base leading-tight text-gray-900 bg-gray-400 border border-gray-200 rounded appearance-none md:min-w-full md:text-lg placeholder:text-gray-900 focus:outline-none focus:bg-white focus:border-gray-500" />
               </div>
-              <div v-if="!validEmail" class="text-red-500">
+              <div v-if="!isValidEmail" class="text-red-500">
                 Please enter a valid email address.
+              </div>
+              <div>
+                <input type="tel" v-model="phone" placeholder="Your Telephone Number"
+                  class="w-full max-w-2xl px-2 py-2 text-base leading-tight text-gray-900 bg-gray-400 border border-gray-200 rounded appearance-none md:min-w-full md:text-lg placeholder:text-gray-900 focus:outline-none focus:bg-white focus:border-gray-500" />
+              </div>
+              <div v-if="!isValidPhone" class="text-red-500">
+                Please enter a valid phone number.
+              </div>
+              <div>
+                <input type="text" v-model="telegram" placeholder="Your Telegram Handle"
+                  class="w-full max-w-2xl px-2 py-2 text-base leading-tight text-gray-900 bg-gray-400 border border-gray-200 rounded appearance-none md:min-w-full md:text-lg placeholder:text-gray-900 focus:outline-none focus:bg-white focus:border-gray-500" />
+              </div>
+              <div v-if="!isValidTelegram" class="text-red-500">
+                Please enter a valid Telegram handle.
               </div>
               <div>
                 <div class="flex flex-col space-y-3">
@@ -52,6 +66,9 @@
                 </div>
                 <div class="text-gray-500">You can safely close this tab now.</div>
               </div>
+              <div class="text-sm italic">
+                We reply within the same day - please also check your spam folder carefully.
+              </div>
             </div>
           </form>
 
@@ -69,13 +86,17 @@ export default {
   data() {
     return {
       email: '',
+      phone: '',
+      telegram: '',
       message: '',
       btc: false,
       eth: false,
       usdt: false,
       usdc: false,
       endpoint: 'https://formspree.io/f/mdobajgq',
-      validEmail: true,
+      isValidEmail: true,
+      isValidPhone: true,
+      isValidTelegram: true,
       successResp: false
     }
   },
@@ -90,15 +111,33 @@ export default {
       return false
     },
 
+    validatePhone(phone) {
+      if (!phone) {
+        return false
+      }
+      return true
+    },
+
+    validateTelegram(handle) {
+      if (!handle) {
+        return false
+      }
+      return true
+    },
+
     async submit() {
       this.successResp = false
-      this.validEmail = this.validateEmail(this.email)
-      if (!this.validEmail) {
-        return
+      this.isValidEmail = this.validateEmail(this.email)
+      this.isValidPhone = this.validatePhone(this.phone)
+      this.isValidTelegram = this.validateTelegram(this.telegram)
+      if (!this.isValidEmail || !this.isValidPhone || !this.isValidTelegram) {
+        return false
       }
       const data = {
         email: this.email,
         message: this.message,
+        phone: this.phone,
+        telegram: this.telegram,
         interested_coins: {
           btc: this.btc,
           eth: this.eth,
