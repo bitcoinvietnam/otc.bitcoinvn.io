@@ -41,7 +41,7 @@ export default {
         },
         {
           caption: 'OTC',
-          url: 'https://otc.bitcoinvn.io?utm_source=otc&utm_medium=footer&utm_campaign=landing'
+          url: 'https://otc.bitcoinvn.io'
         },
         {
           caption: 'BTM',
