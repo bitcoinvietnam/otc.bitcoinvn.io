@@ -134,7 +134,9 @@ export default {
       if (!this.isValidEmail || !this.isValidPhone || !this.isValidTelegram) {
         return false
       }
+      let captcha_token = document.getElementById('g-recaptcha-response').value;
       const data = {
+        "g-recaptcha-response": captcha_token,
         email: this.email,
         message: this.message,
         phone: this.phone,
