@@ -1,4 +1,8 @@
 export default {
+  env: {
+    FORMSPREE_LINK: process.env.FORMSPREE_LINK
+  },
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
