@@ -7,7 +7,6 @@
         </div>
         <div class="text-base md:text-lg md:mx-auto">
           <form @submit.prevent="submit">
-            <div class="g-recaptcha" data-sitekey="6LeYAy0pAAAAAOSFlR_Uyq975H3-Fhhzeo01gRaR"></div>
             <div class="flex flex-col space-y-5 md:space-y-5 md:tracking-wide">
               <div>
                 <input type="email" v-model="email" placeholder="Your Email"
@@ -58,6 +57,7 @@
                 <textarea v-model="message" placeholder="Your Message (Optional)" rows="6"
                   class="w-full max-w-2xl px-2 py-2 text-sm leading-tight text-gray-900 bg-gray-400 border border-gray-200 rounded appearance-none md:min-w-full placeholder:text-gray-900 focus:outline-none focus:bg-white focus:border-gray-500" />
               </div>
+              <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
               <div v-if="successResp" class="text-green-600">
                 <div class="font-bold">
                   Thank you for contacting us.
