@@ -93,7 +93,7 @@ export default {
       eth: false,
       usdt: false,
       usdc: false,
-      endpoint: 'https://formspree.io/f/mdobajgq',
+      endpoint: process.env.FORMSPREE_LINK,
       isValidEmail: true,
       isValidPhone: true,
       isValidTelegram: true,
