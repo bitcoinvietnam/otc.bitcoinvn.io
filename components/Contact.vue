@@ -7,6 +7,7 @@
         </div>
         <div class="text-base md:text-lg md:mx-auto">
           <form @submit.prevent="submit">
+            <div class="g-recaptcha" data-sitekey="6LeYAy0pAAAAAOSFlR_Uyq975H3-Fhhzeo01gRaR"></div>
             <div class="flex flex-col space-y-5 md:space-y-5 md:tracking-wide">
               <div>
                 <input type="email" v-model="email" placeholder="Your Email"

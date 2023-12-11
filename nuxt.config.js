@@ -31,7 +31,8 @@ export default {
                   gtag('config', 'G-8PYNETYLPH');`,
         type: 'text/javascript',
         charset: 'utf-8'
-      }
+      },
+      { src: 'https://www.google.com/recaptcha/api.js', async: true },
     ]
   },
 
