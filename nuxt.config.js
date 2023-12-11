@@ -35,7 +35,6 @@ export default {
       { src: 'https://www.google.com/recaptcha/api.js?render=6LeYAy0pAAAAAOSFlR_Uyq975H3-Fhhzeo01gRaR' }, {
         innerHTML: ` grecaptcha.ready(function () {
           grecaptcha.execute('6LeYAy0pAAAAAOSFlR_Uyq975H3-Fhhzeo01gRaR', {action: 'submit'}).then(function (token) {
-              console.info("got token: " + token);
               document.getElementById('g-recaptcha-response').value = token;
           });
       });`,
