@@ -23,24 +23,37 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
+      // Gtag
       { src: 'https://www.googletagmanager.com/gtag/js?id=G-8PYNETYLPH', async: true },
       {
         innerHTML: `window.dataLayer = window.dataLayer || [];
-                  function gtag(){ dataLayer.push(arguments); };
-                  gtag('js', new Date());
-                  gtag('config', 'G-8PYNETYLPH');`,
+        function gtag(){ dataLayer.push(arguments); };
+        gtag('js', new Date());
+        gtag('config', 'G-8PYNETYLPH');`,
         type: 'text/javascript',
         charset: 'utf-8'
       },
-      { src: 'https://www.google.com/recaptcha/api.js?render=6LeYAy0pAAAAAOSFlR_Uyq975H3-Fhhzeo01gRaR' }, {
-        innerHTML: ` grecaptcha.ready(function () {
-          grecaptcha.execute('6LeYAy0pAAAAAOSFlR_Uyq975H3-Fhhzeo01gRaR', {action: 'submit'}).then(function (token) {
-              document.getElementById('g-recaptcha-response').value = token;
-          });
-      });`,
+      // Rocket Live chat widget
+      {
+        innerHTML: `	(function(w, d, s, u) {
+          w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
+          var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
+          j.async = true; j.src = 'https://chat.bitcoinvn.io/livechat/rocketchat-livechat.min.js?_=201903270000';
+          h.parentNode.insertBefore(j, h);
+        })(window, document, 'script', 'https://chat.bitcoinvn.io/livechat');`,
         type: 'text/javascript',
         charset: 'utf-8'
       },
+      // Google Recaptcha
+      // { src: 'https://www.google.com/recaptcha/api.js?render=6LeYAy0pAAAAAOSFlR_Uyq975H3-Fhhzeo01gRaR' }, {
+      //   innerHTML: ` grecaptcha.ready(function () {
+      //     grecaptcha.execute('6LeYAy0pAAAAAOSFlR_Uyq975H3-Fhhzeo01gRaR', {action: 'submit'}).then(function (token) {
+      //         document.getElementById('g-recaptcha-response').value = token;
+      //     });
+      // });`,
+      // type: 'text/javascript',
+      // charset: 'utf-8'
+      // },
     ]
   },
 
