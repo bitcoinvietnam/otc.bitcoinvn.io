@@ -10,7 +10,7 @@
 export default {
   methods: {
     contact() {
-      FreshworksWidget('show');
+      FreshworksWidget('open');
     }
 
   }
