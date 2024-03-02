@@ -10,12 +10,7 @@
 export default {
   methods: {
     contact() {
-      RocketChat(function () {
-        this.setDepartment('OTC');
-      });
-      RocketChat(function () {
-        this.maximizeWidget();
-      });
+      FreshworksWidget('show');
     }
 
   }

@@ -33,27 +33,16 @@ export default {
         type: 'text/javascript',
         charset: 'utf-8'
       },
-      // Rocket Live chat widget
+      // Freskdesk Helper widget
+      { src: 'https://euc-widget.freshworks.com/widgets/103000007828.js', async: true },
       {
-        innerHTML: `	(function(w, d, s, u) {
-          w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
-          var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
-          j.async = true; j.src = 'https://chat.bitcoinvn.io/livechat/rocketchat-livechat.min.js?_=201903270000';
-          h.parentNode.insertBefore(j, h);
-        })(window, document, 'script', 'https://chat.bitcoinvn.io/livechat');`,
+        innerHTML: `window.fwSettings={
+          'widget_id':103000007828
+          };
+          !function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}()`,
         type: 'text/javascript',
         charset: 'utf-8'
       },
-      // Google Recaptcha
-      // { src: 'https://www.google.com/recaptcha/api.js?render=6LeYAy0pAAAAAOSFlR_Uyq975H3-Fhhzeo01gRaR' }, {
-      //   innerHTML: ` grecaptcha.ready(function () {
-      //     grecaptcha.execute('6LeYAy0pAAAAAOSFlR_Uyq975H3-Fhhzeo01gRaR', {action: 'submit'}).then(function (token) {
-      //         document.getElementById('g-recaptcha-response').value = token;
-      //     });
-      // });`,
-      // type: 'text/javascript',
-      // charset: 'utf-8'
-      // },
     ]
   },
 
