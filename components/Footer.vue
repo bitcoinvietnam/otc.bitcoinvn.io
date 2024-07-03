@@ -2,10 +2,8 @@
   <div class="flex py-8 text-center bg-gray-900/100">
     <div class="m-auto">
       <div class="flex flex-col space-y-3 text-gray-600">
-        <div class="text-center sub-title external-link">
-          <NuxtLink to="/contact">
+        <div class="text-center sub-title external-link cursor-pointer" @click="contact">
             Contact Us
-          </NuxtLink>
         </div>
         <div class="flex flex-row tracking-wide">
           <div v-for="item in external_links" :key="item.caption" class="px-2 external-link">
@@ -24,6 +22,12 @@
 
 <script>
 export default {
+   methods: {
+    contact() {
+      FreshworksWidget('open');
+    }
+  },
+
   data() {
     return {
       external_links: [
