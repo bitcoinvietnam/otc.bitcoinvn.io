@@ -11,7 +11,7 @@
               ◇ Corporate & institutional clients
             </li>
             <li>
-              ◇ High net worth individuals
+              ◇ HNWI & FO’s
             </li>
             <li>
               ◇ Privacy-oriented investors
