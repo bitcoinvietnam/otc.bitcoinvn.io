@@ -15,7 +15,7 @@ import Btn from './Btn.vue'
       <div class="intro-text">Trusted by HNWI & insitutions in Vietnam and globally</div>
       <div class="intro-text">Personalized service, deep liquidity, and fast settlement</div>
       <div class="pt-5">
-        <Btn id="zammad-feedback-form" class="">Get In Touch</Btn>
+        <Btn id="contact-btn-1">Get In Touch</Btn>
       </div>
     </div>
   </section>

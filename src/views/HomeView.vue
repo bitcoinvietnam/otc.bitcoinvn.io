@@ -11,7 +11,7 @@ import Footer from '@/components/Footer.vue'
 </script>
 
 <template>
-  <div class="background">
+  <div class="background" id="_">
     <Header />
     <Intro />
   </div>

@@ -12,7 +12,11 @@ import Btn from './Btn.vue'
         <li>A decade of experience executing high volume orders.</li>
         <li>Long-lasting, trusted and mutually beneficial client relationship.</li>
       </ul>
-      <Btn>Contact Now</Btn>
+      <div style="z-index: 1;">
+        <a href="#_">
+          <Btn> Contact Now </Btn>
+        </a>
+      </div>
     </div>
   </section>
 </template>
