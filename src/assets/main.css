@@ -58,3 +58,47 @@ h3 {
     font-size: 1rem;
   }
 }
+
+/* CSS for Zammad Form widget */
+
+.zammad-form-modal {
+  div,
+  form {
+    color: white;
+    background:
+      radial-gradient(circle at 0% 50%, var(--third-color) 5%, transparent 30%),
+      radial-gradient(circle at 96% 25%, var(--third-color) 5%, transparent 30%);
+    background-color: #0d1323;
+    border: 0.5px solid;
+    border-image: linear-gradient(45deg, var(--third-color), var(--third-color), var(--third-color))
+      1;
+  }
+
+  button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 20px;
+    width: 30%;
+    min-width: min-content;
+  }
+
+  button:hover {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    border: 0.5px solid;
+  }
+
+  input,
+  textarea {
+    background-color: var(--third-color);
+    color: white;
+    border: 0.5px solid;
+    border-image: linear-gradient(45deg, var(--third-color), var(--third-color), var(--third-color))
+      1;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: white;
+  }
+}
