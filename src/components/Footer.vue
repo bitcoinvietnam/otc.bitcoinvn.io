@@ -1,5 +1,5 @@
 <template>
-  <footer class="text-center  py-md-4"
+  <footer class="text-center py-2 py-md-4"
     style="background: linear-gradient(to bottom, var(--third-color), var(--secondary-color))">
     <h5>
       <a href="#_" class="text-decoration-none" style="color: var(--primary-color);">Contact Us</a>
