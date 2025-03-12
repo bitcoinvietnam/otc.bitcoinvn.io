@@ -3,7 +3,7 @@
     <div class="container my-5">
       <div class="row align-items-center">
         <div class="col-lg-6">
-          <img src="@/assets/chess.png" class="responsive-image" height="auto" />
+          <img src="@/assets/chess.png" class="leadership-art" height="auto" />
         </div>
         <div class="col-lg-5 text-start">
           <h2>OUR TEAM LEADERSHIP</h2>
@@ -43,13 +43,13 @@
   padding-left: 30px;
 }
 
-.responsive-image {
-  width: 500px;
+.leadership-art {
+  width: 27rem;
 }
 
 @media (max-width: 768px) {
-  .responsive-image {
-    width: 300px;
+  .leadership-art {
+    width: 15rem;
   }
 }
 </style>
