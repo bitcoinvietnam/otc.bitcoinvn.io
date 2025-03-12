@@ -9,6 +9,11 @@
 </template>
 
 <style scoped>
+.btn:hover {
+  border: 1px solid;
+  border-color: var(--primary-color);
+}
+
 .btn-responsive-size {
   font-size: 1.2rem;
   padding: 10px 20px;

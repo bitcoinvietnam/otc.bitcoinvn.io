@@ -81,17 +81,16 @@ h3 {
   }
 
   button {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
     border-radius: 20px;
-    width: 30%;
+    width: 40%;
     min-width: min-content;
+    background: linear-gradient(to right, var(--primary-color), #ff3300);
+    color: var(--text-color);
   }
 
   button:hover {
-    background-color: var(--third-color);
-    color: var(--primary-color);
-    border: 0.5px solid;
+    border: 1px solid;
+    border-color: var(--primary-color);
   }
 
   input,
