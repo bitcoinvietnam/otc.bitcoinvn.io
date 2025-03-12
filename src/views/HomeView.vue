@@ -41,9 +41,9 @@ import Footer from '@/components/Footer.vue'
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 25%;
+  height: 20%;
   /* Adjust fade height */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, var(--secondary-color) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, var(--secondary-color) 90%);
 }
 
 @media (max-width: 768px) {
