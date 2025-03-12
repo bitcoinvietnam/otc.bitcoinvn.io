@@ -1,7 +1,7 @@
 <template>
   <section class="container">
-    <div class="row justify-content-center gap-4 py-5">
-      <div class="gradient-big-box rounded-4 py-4">
+    <div class="row justify-content-center gap-1 gap-md-4 py-1 py-md-5">
+      <div class="gradient-big-box rounded-4 py-1 py-md-4">
         <h2 class="fs-2">WHAT IS OTC?</h2>
         <p>
           Over-the-counter (OTC) trading takes place off the online exchange platforms provided
@@ -23,7 +23,7 @@
         </p>
       </div>
 
-      <div class="gradient-big-box rounded-4 py-4">
+      <div class="gradient-big-box rounded-4 py-1 py-md-4">
         <h2 class="fs-2">*OTHER CITIES & (SOUTH-EAST)-ASIAN COUNTRIES</h2>
         <p>Might be serviceable upon request! Additional markets we can service upon request:</p>
         <p>
@@ -45,5 +45,11 @@
   background-color: #0d1323;
   width: 70vw;
   padding: 20px 10px;
+}
+
+@media (max-width: 768px) {
+  .gradient-big-box {
+    width: 100vw;
+  }
 }
 </style>

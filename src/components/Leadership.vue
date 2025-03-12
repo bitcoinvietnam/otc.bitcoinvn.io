@@ -26,10 +26,16 @@
 
 <style scoped>
 .quote-mark {
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: bold;
   color: var(--primary-color);
   font-family: serif;
+}
+
+@media (max-width: 768px) {
+  .quote-mark {
+    font-size: 2.5rem;
+  }
 }
 
 .left-border {

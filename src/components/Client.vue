@@ -7,7 +7,7 @@ import Box from './Box.vue'
     <Box class="gradient-big-box py-5">
       <h2 class="pb-md-3">WHO WE SERVE</h2>
       <div class="container">
-        <div class="row justify-content-center px-3 gap-5">
+        <div class="row justify-content-center px-1 px-md-3 gap-5">
           <Box class="col-md-3 gradient-small-box">
             <div class="icon-container">
               <img src="@/assets/icons/corporate.png" alt="Corporate Icon" />
@@ -51,6 +51,13 @@ import Box from './Box.vue'
     radial-gradient(circle at 96% 25%, var(--third-color) 5%, transparent 30%);
   background-color: #0d1323;
   width: 75vw;
+}
+
+
+@media (max-width: 768px) {
+  .gradient-big-box {
+    width: 100vw;
+  }
 }
 
 .gradient-small-box {

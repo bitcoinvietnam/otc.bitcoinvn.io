@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="container" style="width: 50vw">
+    <div class="container w-75 w-md-50">
       <div class="row gap-5 justify-content-center">
         <h2 class="pt-10 mb-10">Supported Currencies</h2>
         <div class="container">
@@ -17,9 +17,8 @@
           </div>
         </div>
         <div class="currency-box w-auto further-text px-0 px-md-5">
-          <span class="fw-semibold" style="color: var(--primary-color)"
-            >Further common cryptocurrencies upon request</span
-          >
+          <span class="fw-semibold" style="color: var(--primary-color)">Further common cryptocurrencies upon
+            request</span>
         </div>
       </div>
     </div>
@@ -34,6 +33,15 @@
   padding-bottom: 10px;
   padding-left: 3px;
   padding-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .currency-box {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
 }
 
 .currency-box img {

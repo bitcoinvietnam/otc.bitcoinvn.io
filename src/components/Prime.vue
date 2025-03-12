@@ -38,6 +38,13 @@ import Btn from './Btn.vue'
   width: 70vw;
 }
 
+@media (max-width: 768px) {
+  .gradient-big-box {
+    width: 100vw;
+  }
+}
+
+
 .prime-name-gradient {
   background-clip: text;
   color: transparent;
