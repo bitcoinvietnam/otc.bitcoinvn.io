@@ -28,7 +28,7 @@ import Footer from '@/components/Footer.vue'
 .background {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: auto;
   background:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.7) 100%),
     url('@/assets/main-bg.webp') center/cover no-repeat;
@@ -43,5 +43,11 @@ import Footer from '@/components/Footer.vue'
   height: 25%;
   /* Adjust fade height */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, var(--secondary-color) 100%);
+}
+
+@media (max-width: 768px) {
+  .background::after {
+    height: 15%;
+  }
 }
 </style>
