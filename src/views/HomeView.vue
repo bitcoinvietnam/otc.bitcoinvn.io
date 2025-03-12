@@ -28,7 +28,8 @@ import Footer from '@/components/Footer.vue'
 .background {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100vh;
+  min-height: fit-content;
   background:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.7) 100%),
     url('@/assets/main-bg.webp') center/cover no-repeat;
