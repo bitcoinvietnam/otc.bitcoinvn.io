@@ -1,7 +1,7 @@
 <template>
-  <section class="container">
-    <div class="row justify-content-center gap-1 gap-md-4 py-1 py-md-5">
-      <div class="gradient-big-box rounded-4 py-1 py-md-4">
+  <section class="container pb-3 pb-md-0">
+    <div class="row justify-content-center gap-3 gap-md-4 py-1 py-md-4">
+      <div class="gradient-big-box rounded-4 py-3 py-md-4">
         <h2 class="fs-2">WHAT IS OTC?</h2>
         <p>
           Over-the-counter (OTC) trading takes place off the online exchange platforms provided

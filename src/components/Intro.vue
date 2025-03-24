@@ -22,6 +22,16 @@ import Btn from './Btn.vue'
 </template>
 
 <style scoped>
+section {
+  height: 85vh;
+}
+
+@media (max-width: 768px) {
+  section {
+    height: 90vh;
+  }
+}
+
 .outlined-text {
   -webkit-text-stroke: 1px #ffdd00;
 }

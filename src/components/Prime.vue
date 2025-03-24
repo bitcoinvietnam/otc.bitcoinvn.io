@@ -4,9 +4,9 @@ import Btn from './Btn.vue'
 </script>
 
 <template>
-  <section>
+  <section class="py-3 py-md-1">
     <Box class="container gradient-big-box">
-      <div class="row gap-4 justify-content-center py-5">
+      <div class="row gap-4 justify-content-center py-3 py-md-5">
         <h2 class="text-white d-flex align-items-center justify-content-center">
           <img src="@/assets/bv-prime.png" alt="BV Prime Logo" width="auto" height="50"
             class="d-inline-block align-top" />BV
@@ -30,6 +30,16 @@ import Btn from './Btn.vue'
 </template>
 
 <style scoped>
+section {
+  height: 50vh;
+}
+
+@media (max-width: 768px) {
+  section {
+    height: auto;
+  }
+}
+
 .gradient-big-box {
   background:
     radial-gradient(circle at 0% 50%, var(--third-color) 5%, transparent 30%),

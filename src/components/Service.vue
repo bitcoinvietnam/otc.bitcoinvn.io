@@ -4,7 +4,7 @@ import Btn from './Btn.vue'
 
 <template>
   <section class="container">
-    <div class="row half-circle-container gap-3">
+    <div class="row half-circle-container gap-md-3">
       <div class="half-circle"></div>
       <h2>Personalized 1-ON-1<br />Service</h2>
       <ul>
@@ -22,10 +22,20 @@ import Btn from './Btn.vue'
 </template>
 
 <style scoped>
+section {
+  height: 50vh;
+}
+
+@media (max-width: 768px) {
+  section {
+    height: auto;
+  }
+}
+
 .half-circle-container {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,9 +45,9 @@ import Btn from './Btn.vue'
 
 .half-circle {
   position: absolute;
-  bottom: -10;
-  width: 50%;
-  height: 600px;
+  bottom: -20;
+  width: 45%;
+  height: 550px;
   background-color: transparent;
   border-top: 5px solid var(--primary-color);
   border-radius: 50% 50% 0 0;
@@ -45,8 +55,8 @@ import Btn from './Btn.vue'
 
 @media (max-width: 768px) {
   .half-circle {
-    width: 100%;
-    height: 490px;
+    width: 120%;
+    height: 430px;
   }
 }
 

@@ -45,6 +45,16 @@ import Box from './Box.vue'
 </template>
 
 <style scoped>
+section {
+  height: 65vh;
+}
+
+@media (max-width: 768px) {
+  section {
+    height: auto;
+  }
+}
+
 .gradient-big-box {
   background:
     radial-gradient(circle at 0% 50%, var(--third-color) 5%, transparent 30%),

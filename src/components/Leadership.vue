@@ -1,8 +1,8 @@
 <template>
-  <section>
-    <div class="container my-5">
+  <section class="pb-5 pb-md-3">
+    <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6">
+        <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end">
           <img src="@/assets/chess.png" class="leadership-art" height="auto" />
         </div>
         <div class="col-lg-5 text-start">
@@ -25,6 +25,16 @@
 </template>
 
 <style scoped>
+section {
+  height: 50vh;
+}
+
+@media (max-width: 768px) {
+  section {
+    min-height: fit-content;
+  }
+}
+
 .quote-mark {
   font-size: 5rem;
   font-weight: bold;
@@ -49,7 +59,7 @@
 
 @media (max-width: 768px) {
   .leadership-art {
-    width: 15rem;
+    width: 12rem;
   }
 }
 </style>

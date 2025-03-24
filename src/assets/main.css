@@ -29,15 +29,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh;
   text-align: center;
   min-height: fit-content;
-}
-
-@media (max-width: 768px) {
-  section {
-    height: 90vh;
-  }
 }
 
 h2 {
