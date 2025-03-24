@@ -7,7 +7,7 @@ import Btn from './Btn.vue'
     <div>
       <div class="intro-text">High-Volume Crypto Trading. Executed with Precision</div>
       <div class="pt-3 pb-3">
-        <div class="outlined-text fw-medium display-2" style="color: var(--primary-color)">
+        <div class="outlined-text glow-text fw-medium display-2" style="color: var(--primary-color)">
           BitcoinVN OTC
         </div>
         <span class="fst-italic" style="color: var(--primary-color)">(est 2014)</span>
@@ -34,5 +34,9 @@ import Btn from './Btn.vue'
   .intro-text {
     font-size: 1rem;
   }
+}
+
+.glow-text {
+  text-shadow: 0 0 3px var(--primary-color), 0 0 8px var(--primary-color);
 }
 </style>
