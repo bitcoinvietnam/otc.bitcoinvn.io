@@ -29,7 +29,7 @@ import Footer from '@/components/Footer.vue'
   position: relative;
   width: 100%;
   height: 100vh;
-  min-height: fit-content;
+  min-height: 100dvh;
   background:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 60%, rgba(0, 0, 0, 0.7) 100%),
     url('@/assets/main-bg.webp') center/cover no-repeat;
